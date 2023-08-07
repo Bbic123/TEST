@@ -7,7 +7,7 @@ int main(){
     if(y % 400 == 0){
         cout << "a leap year\n";
     }
-    else if(y % 4 == 0 && y % 100 != 0){
+    else if(y % 4 == 0 && y % 100 != 0){ // ±Nif¦X¨Ö
         cout << "a leap year\n";
     }
     else{
