@@ -4,7 +4,7 @@ using namespace std;
 int main(){
     int y;
     cin >> y;
-    if(y % 400 == 0 || (y % 100 != 0 && y % 4 == 0)){ // ¦A¦X¨Ö
+    if(y % 400 == 0 || (y % 100 != 0 && y % 4 == 0)){ // ï¿½Aï¿½Xï¿½ï¿½
         cout << "a leap year\n";
     }
     else{
