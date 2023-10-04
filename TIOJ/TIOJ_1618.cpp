@@ -28,4 +28,5 @@ int main(){
         }
     }
     cout << p << ' ' << q << '\n';
+    return 0;
 }
