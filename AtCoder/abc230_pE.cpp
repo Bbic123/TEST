@@ -17,4 +17,5 @@ int main(){ // abc230_pE
         else ans += m;
     }
     cout << ans << '\n';
+    return 0;
 }
