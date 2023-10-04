@@ -63,4 +63,5 @@ int main(){
         cout << ans << '\n' << ansL << ' ' << ansR << '\n';
         for(int i = 1; i <= n; ++i) sum[i] = 0;
     }
+    return 0;
 }
