@@ -5,7 +5,7 @@ const int N = 5e5 + 5;
 int h[N], b[N];
 deque<int> dq;
 
-signed main(){
+int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     int n, k, p, q = -2147483648, now = 0;
