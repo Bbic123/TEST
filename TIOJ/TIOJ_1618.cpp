@@ -8,7 +8,7 @@ deque<int> dq;
 signed main(){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-    int n, k, ans = -2147483648, ansp, now = 0;
+    int n, k, p, q = -2147483648, now = 0;
     cin >> n >> k;
     for(int i = 1; i <= n; ++i) cin >> h[i];
     for(int i = 1; i <= n; ++i){
@@ -22,10 +22,10 @@ signed main(){
             now -= b[dq.front()];
             dq.pop_front();
         }
-        if(now > ans){ // ans
-            ans = now;
-            ansp = i;
+        if(now > q){ // check
+            q = now;
+            p = i;
         }
     }
-    cout << ansp << ' ' << ans << '\n';
+    cout << p << ' ' << q << '\n';
 }
