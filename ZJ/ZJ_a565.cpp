@@ -11,7 +11,7 @@ signed main(){
         cin >> s;
         p = pq = 0;
         for(char i : s){
-            if(p > 0 && i == 'q') ++pq, --p;
+            if(i == 'q' && p > 0) ++pq, --p;
             else if(i == 'p') ++p;
         }
         cout << pq << '\n';
