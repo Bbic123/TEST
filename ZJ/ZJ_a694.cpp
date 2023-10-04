@@ -19,4 +19,5 @@ int main(){
             cout << nn[x2][y2] - nn[x2][y1 - 1] - nn[x1 - 1][y2] + nn[x1 - 1][y1 - 1] << '\n';
         }
     }
+    return 0;
 }

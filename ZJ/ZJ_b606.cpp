@@ -23,4 +23,5 @@ int main(){
         pq.pop();
         cout << ans << '\n';
     }
+    return 0;
 }

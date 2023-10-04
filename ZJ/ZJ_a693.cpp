@@ -17,4 +17,5 @@ int main(){
             cout << nn[r] - nn[l - 1] << '\n';
         }
     }
+    return 0;
 }

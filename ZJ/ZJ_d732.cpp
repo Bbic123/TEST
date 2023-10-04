@@ -16,4 +16,5 @@ int main(){
         int *it = lower_bound(a, a + n, x);
         cout << (*it == x ? (it - a + 1) : 0) << '\n';
     }
+    return 0;
 }

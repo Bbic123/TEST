@@ -24,4 +24,5 @@ int main(){
         }
         cout << (f ? "YES\n" : "NO\n");
     }
+    return 0;
 }
