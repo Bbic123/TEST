@@ -20,4 +20,5 @@ int main(){
         ans += a + b;
     }
     cout << ans << '\n';
+    return 0;
 }
