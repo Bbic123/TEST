@@ -2,20 +2,21 @@
 using namespace std;
 
 int main(){
-    int y;
-    cin >> y;
-    if(y % 400 == 0){ // ÀË¬d¬O§_¬°400ªº­¿¼Æ
-        cout << "a leap year\n";
-    }
-    else if(y % 4 == 0){ // ¬O§_¬°4ªº­¿¼Æ
-        if(y % 100 != 0){
-            cout << "a leap year\n"; // ­Y¤£¬°100ªº­¿¼Æ§Y¦ì¶|¦~
-        }
-        else{
-            cout << "a normal year\n"; // §_«h¬°¥­¦~
-        }
-    }
-    else{
-        cout << "a normal year\n"; // ³Ñ¤U³£¬O¥­¦~
-    }
+	int y;
+	cin >> y;
+	if(y % 400 == 0){ // æª¢æŸ¥æ˜¯å¦ç‚º400çš„å€æ•¸
+		cout << "a leap year\n";
+	}
+	else if(y % 4 == 0){ // æ˜¯å¦ç‚º4çš„å€æ•¸
+		if(y % 100 != 0){
+			cout << "a leap year\n"; // è‹¥ä¸ç‚º100çš„å€æ•¸å³ä½é–å¹´
+		}
+		else{
+			cout << "a normal year\n"; // å¦å‰‡ç‚ºå¹³å¹´
+		}
+	}
+	else{
+		cout << "a normal year\n"; // å‰©ä¸‹éƒ½æ˜¯å¹³å¹´
+	}
+	return 0;
 }
