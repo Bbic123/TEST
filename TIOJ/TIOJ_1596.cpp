@@ -2,6 +2,7 @@
 using namespace std;
 
 typedef long long ll;
+
 #define I second.first
 #define J second.second
 #define C first
