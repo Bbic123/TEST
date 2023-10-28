@@ -2,8 +2,8 @@
 using namespace std;
  
 typedef long long ll;
-
 const int N = 1e5 + 5;
+
 vector<int> eg[N];
 bool bobobo[N];
 int mx[N];
