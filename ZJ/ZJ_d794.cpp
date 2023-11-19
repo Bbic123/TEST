@@ -23,7 +23,7 @@ int query(int idx){
     return re;
 }
 
-int main(){ // 1.2sec
+int main(){ // 1.2 sec
 	ios::sync_with_stdio(false);
 	cin.tie(NULL);
 	while(cin >> n){
