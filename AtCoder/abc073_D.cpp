@@ -1,11 +1,13 @@
 #include <bits/stdc++.h>
-using namespace std; // abc073_pD - joisino's travel
+using namespace std; // abc073_D - joisino's travel
 
 const long long Inf = 1e18;
 int r[15];
 long long dp[205][205];
 
 int main(){
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
 	int n, m, R, a, b, c;
 	long long ans = Inf, check;
 	cin >> n >> m >> R;
@@ -34,4 +36,5 @@ int main(){
 		ans = min(ans, check);
 	}while(next_permutation(r, r + R));
 	cout << ans << '\n';
+	return 0;
 }

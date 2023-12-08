@@ -1,11 +1,11 @@
-#include<bits/stdc++.h>
-using namespace std;
+#include <bits/stdc++.h>
+using namespace std; // abc230_E - Fraction Floor Sum
 
 typedef long long ll;
 
-int main(){ // abc230_pE
-	ios::sync_with_stdio(0);
-	cin.tie(0);
+int main(){
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
 	ll n, ans = 0, m, n1;
 	cin >> n;
 	for(ll i = 1; i <= n; ++i){
