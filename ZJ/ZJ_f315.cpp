@@ -17,7 +17,7 @@ void update(int idx){
 }
 
 int query(int idx){
-	ll re = 0;
+	int re = 0;
 	while(idx){
 		re += BIT[idx];
 		idx -= lowbit(idx);
