@@ -15,7 +15,7 @@ inline int query(int idx){
 	return re;
 }
 
-inline int input(){
+inline int input(){ // for positive integer
 	int re = 0;
 	char ch = getchar_unlocked();
 	while(ch < '0' || ch > '9') getchar_unlocked();
@@ -26,7 +26,7 @@ inline int input(){
 	return re;
 }
 
-inline void output(int x){
+inline void output(int x){ // for positive integer
 	if(x >= 10) output(x / 10);
 	putchar_unlocked(x % 10 + '0');
 	return;
@@ -37,7 +37,7 @@ int main(){
 	n = input();
 	q = input();
 	for(int i = 1; i <= n; ++i) a[i] = input();
-	{
+	{ // build
 		int nxt;
 		for(int i = 1; i <= n; ++i){
 			BIT[i] ^= a[i];
@@ -50,7 +50,7 @@ int main(){
 		if(!x){
 			l = input();
 			r = input();
-			{
+			{ // query & output
 				int ans = query(r) ^ query(l - 1);
 				output(ans);
 				putchar_unlocked('\n');
@@ -59,7 +59,7 @@ int main(){
 		else{
 			x = input();
 			v = input();
-			{
+			{ // modify
 				for(int i = x; i <= n; i += i & (-i)){
 					BIT[i] ^= v ^ a[x];
 				}
