@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-using namespace std;
+using namespace std; // abc293_G - Triple Index
 
 typedef long long ll;
 #define C3(x) ((x) * (x - 1) * (x - 2) / 6)
