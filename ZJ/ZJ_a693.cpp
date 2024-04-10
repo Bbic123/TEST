@@ -1,20 +1,20 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-
-int nn[100005];
-
+ 
 int main(){
-	ios::sync_with_stdio(0);
-	cin.tie(0);
-	int n, m, l, r, num;
-	while(cin >> n >> m){
-		for(int i = 1; i <= n; ++i){
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	long long arr[100005] = {};
+	int n, m, num;
+	while(cin >> n >> m){ // EOF
+		for(int i = 1; i <= n; ++i){ // 1-base
 			cin >> num;
-			nn[i] = nn[i - 1] + num;
+			arr[i] = arr[i - 1] + num;
 		}
+		int a, b;
 		while(m--){
-			cin >> l >> r;
-			cout << nn[r] - nn[l - 1] << '\n';
+			cin >> a >> b;
+			cout << arr[b] - arr[a - 1] << '\n';
 		}
 	}
 	return 0;
