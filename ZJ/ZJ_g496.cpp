@@ -2,6 +2,8 @@
 using namespace std;
 
 int main(){
-	cout << "Snail is \"handsome.\"";
+	int a, s;
+	cin >> a >> s;
+	cout << (s + a - 1) / a;
 	return 0;
 }
