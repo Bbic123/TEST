@@ -38,14 +38,14 @@ void check_max(){
 	ox2 = min(yx2, rx2);
 	oy1 = max(yy1, ry1);
 	oy2 = min(yy2, ry2);
-	if(ox1<=ox2 && oy1<=oy2)
+	if(ox1 <= ox2 && oy1 <= oy2)
 		o = (ox2 - ox1 + 1) * (oy2 - oy1 + 1);
 
 	gx1 = max(yx1, bx1);
 	gx2 = min(yx2, bx2);
 	gy1 = max(yy1, by1);
 	gy2 = min(yy2, by2);
-	if(gx1<=gx2 && gy1<=gy2)
+	if(gx1 <= gx2 && gy1 <= gy2)
 		g = (gx2 - gx1 + 1) * (gy2 - gy1 + 1);
 
 	px1 = max(bx1, rx1);
@@ -55,11 +55,11 @@ void check_max(){
 	if(px1<=px2 && py1<=py2)
 		p = (px2 - px1 + 1) * (py2 - py1 + 1);
 
-	dx1 = max(bx1, max(rx1,yx1));
-	dx2 = min(bx2, min(rx2,yx2));
-	dy1 = max(by1, max(ry1,yy1));
-	dy2 = min(by2, min(ry2,yy2));
-	if(dx1<=dx2 && dy1<=dy2)
+	dx1 = max(bx1, max(rx1, yx1));
+	dx2 = min(bx2, min(rx2, yx2));
+	dy1 = max(by1, max(ry1, yy1));
+	dy2 = min(by2, min(ry2, yy2));
+	if(dx1 <= dx2 && dy1 <= dy2)
 		d = (dx2 - dx1 + 1) * (dy2 - dy1 + 1);
 
 	mx_r = max(mx_r, r - p - o + d);
