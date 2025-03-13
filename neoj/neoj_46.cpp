@@ -52,7 +52,7 @@ void check_max(){
 	px2 = min(bx2, rx2);
 	py1 = max(by1, ry1);
 	py2 = min(by2, ry2);
-	if(px1<=px2 && py1<=py2)
+	if(px1 <= px2 && py1 <= py2)
 		p = (px2 - px1 + 1) * (py2 - py1 + 1);
 
 	dx1 = max(bx1, max(rx1, yx1));
