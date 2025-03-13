@@ -120,4 +120,5 @@ int main(){
 		else if(c == 'D') printf("%d", mx_d);
 		putchar('\n');
 	}
+	return 0;
 }
